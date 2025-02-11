@@ -1,0 +1,155 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f1c40f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 16px;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Grid Layout */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Card Styling */
+.card {
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Icons Styling */
+.card i {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Stats */
+.stats {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Card Description */
+.card p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #d1d5db;
+}
+
+/* Unique Colors for Each Card */
+.card1 { background: #e74c3c; }
+.card2 { background: #3498db; }
+.card3 { background: #2ecc71; }
+.card4 { background: #f39c12; }
+.card5 { background: #9b59b6; }
+.card6 { background: #16a085; }
+
+/* Exam Table Section */
+.exam-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.exam-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background: #1e293b;
+    color: #f1c40f;
+}
+
+td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.active {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .dashboard {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
